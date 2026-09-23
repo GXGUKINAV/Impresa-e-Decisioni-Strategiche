@@ -31,6 +31,11 @@ var days = [
     n: 3,
     title: 'Impresa, mercato e strategia',
     file: 'appunti/day-03.html'
+  },
+  {
+  n: 4,
+  title: 'Le cinque forze di Porter e le strategie competitive di base',
+  file: 'appunti/day-04.html'
   }
 ];
 days.sort(function (a, b) { return a.n - b.n; });
