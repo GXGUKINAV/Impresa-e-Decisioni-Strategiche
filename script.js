@@ -33,9 +33,14 @@ var days = [
     file: 'appunti/day-03.html'
   },
   {
-  n: 4,
-  title: 'Le cinque forze di Porter e le strategie competitive di base',
-  file: 'appunti/day-04.html'
+    n: 4,
+    title: 'Le cinque forze di Porter e le strategie competitive di base',
+    file: 'appunti/day-04.html'
+  },
+  {
+    n: 5,
+    title: 'Bilancio, competenza economica e partita doppia',
+    file: 'appunti/day-05.html'
   }
 ];
 days.sort(function (a, b) { return a.n - b.n; });
