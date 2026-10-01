@@ -48,13 +48,11 @@ var days = [
 days.sort(function (a, b) { return a.n - b.n; });
 
 var esercitazioni = [
-  /* Esempio (togli i commenti e adatta):
   {
     n: 1,
-    title: '...',
+    title: 'Partita doppia, mastrini, CE e SP',
     file: 'appunti/esercitazione-1.html'
   }
-  */
 ];
 esercitazioni.sort(function (a, b) { return a.n - b.n; });
 

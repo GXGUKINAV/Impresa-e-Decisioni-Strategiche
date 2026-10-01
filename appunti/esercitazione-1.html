@@ -1,0 +1,449 @@
+<p>Prima esercitazione del modulo di analisi di bilancio: si applicano partita doppia, mastrini, conto economico e stato patrimoniale a un caso completo (esercizio 2021) e poi si inizia l'anno successivo (esercizio 2022). Il metodo è quello della lavagna del docente: per ogni operazione si compila una tabella con <strong>conto, natura, documento, sezione, Dare/Avere e importo</strong>.</p>
+
+<h2>1. Teoria del bilancio</h2>
+
+<h3>Conto economico e stato patrimoniale</h3>
+<div class="tbl"><table>
+<thead><tr><th>Documento</th><th>Domanda a cui risponde</th><th>Cosa rappresenta</th></tr></thead>
+<tbody>
+<tr><td>Conto economico (CE)</td><td>Che risultato ha prodotto l'azienda durante l'anno?</td><td>Costi, ricavi e risultato dell'esercizio</td></tr>
+<tr><td>Stato patrimoniale (SP)</td><td>Qual è la situazione dell'azienda alla fine dell'anno?</td><td>Attività, patrimonio netto e passività</td></tr>
+</tbody>
+</table></div>
+<p>Per ricordarli: il CE è il «film» dell'anno; lo SP è la «fotografia» finale.</p>
+
+<h3>Struttura del conto economico</h3>
+<p>Il CE dell'esercitazione è <strong>per natura</strong> e ha struttura <strong>scalare</strong>: si parte dai ricavi e, aggiungendo o sottraendo le altre voci, si arriva all'utile netto. Le quattro gestioni sono:</p>
+<div class="tbl"><table>
+<thead><tr><th>Gestione</th><th>Voci principali</th><th>Risultato raggiunto</th></tr></thead>
+<tbody>
+<tr><td>Caratteristica (GC)</td><td>Ricavi di vendita, materie prime, stipendi, TFR, ammortamenti, variazione delle rimanenze</td><td>EBIT (risultato operativo)</td></tr>
+<tr><td>Finanziaria (GF)</td><td>Proventi finanziari e interessi passivi</td><td>Risultato della gestione ordinaria</td></tr>
+<tr><td>Straordinaria (GS)</td><td>Proventi e oneri straordinari</td><td>Utile lordo (prima delle imposte)</td></tr>
+<tr><td>Fiscale (GFIS)</td><td>Imposte</td><td>Utile netto</td></tr>
+</tbody>
+</table></div>
+$$\text{Risultato ordinario}=\text{EBIT}+\text{proventi finanziari}-\text{oneri finanziari}$$
+$$\text{Utile lordo}=\text{risultato ordinario}+\text{proventi straordinari}-\text{oneri straordinari}$$
+$$\text{Utile netto}=\text{utile lordo}-\text{imposte}$$
+
+<div class="box warn">
+<div class="bt">Attenzione</div>
+<p>Questa è la struttura didattica dell'esercitazione. Nel CE civilistico attuale non esiste una sezione straordinaria separata: quei componenti vengono ricollocati nelle voci appropriate. Per gli esercizi si mantiene comunque lo schema del docente.</p>
+</div>
+
+<h3>Struttura dello stato patrimoniale</h3>
+<p>Lo SP distingue le <em>risorse</em> dell'azienda dalle <em>fonti</em> che le finanziano. La distinzione corrente/non corrente dipende dall'orizzonte temporale di utilizzo o rimborso.</p>
+<div class="tbl"><table>
+<thead><tr><th>Area</th><th>Significato</th><th>Esempi</th></tr></thead>
+<tbody>
+<tr><td>Attivo non corrente (ANC)</td><td>Risorse utilizzabili su più anni</td><td>Impianti, immobili, marchi</td></tr>
+<tr><td>Attivo corrente (AC)</td><td>Risorse liquide o realizzabili nel breve periodo</td><td>Conto corrente, crediti verso clienti, rimanenze</td></tr>
+<tr><td>Patrimonio netto (PN)</td><td>Mezzi propri dell'azienda</td><td>Capitale sociale, utile d'esercizio, utili a nuovo</td></tr>
+<tr><td>Passivo non corrente (PNC)</td><td>Debiti e obbligazioni di lungo periodo</td><td>Mutuo, fondo TFR</td></tr>
+<tr><td>Passivo corrente (PC)</td><td>Debiti da saldare nel breve periodo</td><td>Debiti verso fornitori, debiti tributari</td></tr>
+</tbody>
+</table></div>
+$$\text{Attività}=\text{Patrimonio netto}+\text{Passività}$$
+<p>Quando il docente parla di «totale passivo» della colonna destra include anche il patrimonio netto. Questo non significa che il PN sia un debito.</p>
+
+<h3>Le voci da distinguere</h3>
+<div class="tbl"><table>
+<thead><tr><th>Voci</th><th>Differenza</th></tr></thead>
+<tbody>
+<tr><td>Stipendi / pagamento degli stipendi</td><td>Gli stipendi sono un costo nel CE; il pagamento è una diminuzione del conto corrente nello SP</td></tr>
+<tr><td>Quota TFR / fondo TFR</td><td>La quota annuale è un costo nel CE; il fondo è il debito accumulato verso i dipendenti nello SP</td></tr>
+<tr><td>Ammortamento / fondo ammortamento</td><td>L'ammortamento è il costo annuale; il fondo accumula gli ammortamenti degli anni</td></tr>
+<tr><td>Rimanenze / variazione delle rimanenze</td><td>Le rimanenze sono il valore del magazzino finale nello SP; la variazione è una voce del CE</td></tr>
+<tr><td>Mutuo / interessi passivi</td><td>Il mutuo è un debito; gli interessi sono il costo del finanziamento</td></tr>
+<tr><td>Imposte / debiti tributari</td><td>Le imposte sono un costo; i debiti tributari sono l'importo ancora da pagare allo Stato</td></tr>
+<tr><td>Utile d'esercizio / utili a nuovo</td><td>Il primo è il risultato dell'anno; i secondi sono utili precedenti mantenuti in azienda</td></tr>
+</tbody>
+</table></div>
+
+<h2>2. Partita doppia e mastrini</h2>
+
+<h3>Come leggere le tabelle</h3>
+<div class="tbl"><table>
+<thead><tr><th>Sigla</th><th>Significato</th></tr></thead>
+<tbody>
+<tr><td>E / F</td><td>Natura economica / natura finanziaria</td></tr>
+<tr><td>CE / SP</td><td>Conto economico / stato patrimoniale</td></tr>
+<tr><td>GC / GF / GS / GFIS</td><td>Gestione caratteristica / finanziaria / straordinaria / fiscale</td></tr>
+<tr><td>ANC / AC</td><td>Attivo non corrente / corrente</td></tr>
+<tr><td>PN / PNC / PC</td><td>Patrimonio netto / passivo non corrente / corrente</td></tr>
+<tr><td>D / A</td><td>Dare / Avere</td></tr>
+</tbody>
+</table></div>
+
+<div class="box def">
+<div class="bt">Metodo del docente — due domande</div>
+<ol>
+<li><strong>Cosa sta succedendo?</strong> Per esempio, l'azienda acquista materie prime.</li>
+<li><strong>Come viene regolata l'operazione?</strong> Per esempio, paga in banca oppure crea un debito.</li>
+</ol>
+<p>Le risposte indicano quali conti aprire.</p>
+</div>
+
+<h3>Regole Dare e Avere</h3>
+<p>Dare e Avere non significano automaticamente «positivo» e «negativo»: dipende dal conto movimentato.</p>
+<div class="tbl"><table>
+<thead><tr><th>Movimento</th><th>Dare</th><th>Avere</th></tr></thead>
+<tbody>
+<tr><td>Denaro in banca</td><td>Entrata</td><td>Uscita</td></tr>
+<tr><td>Crediti</td><td>Aumento</td><td>Diminuzione</td></tr>
+<tr><td>Debiti</td><td>Diminuzione</td><td>Aumento</td></tr>
+<tr><td>Costi</td><td>Registrazione del costo</td><td>Eventuali rettifiche</td></tr>
+<tr><td>Ricavi</td><td>Eventuali rettifiche</td><td>Registrazione del ricavo</td></tr>
+<tr><td>Beni nell'attivo (impianti, rimanenze)</td><td>Aumento del valore del conto</td><td>Diminuzione del valore del conto</td></tr>
+</tbody>
+</table></div>
+<p>La natura economica non significa necessariamente «bene fisico»: anche stipendi, interessi e imposte sono voci economiche. E un conto dello SP non è necessariamente finanziario: gli impianti sono nello SP ma il docente li classifica come economici.</p>
+<p>Per ogni operazione:</p>
+$$\text{Totale Dare}=\text{Totale Avere}$$
+<p>Non servono esattamente due righe: possono essercene tre o più, purché i totali coincidano.</p>
+
+<h3>A cosa servono i mastrini</h3>
+<p>Un mastrino raccoglie tutti i movimenti di uno stesso conto, separando Dare e Avere. È utile per i conti movimentati più volte, come il conto corrente.</p>
+$$S=\text{Totale Dare}-\text{Totale Avere}$$
+<ul>
+<li>Se $S\gt 0$, il conto ha saldo Dare.</li>
+<li>Se $S\lt 0$, il conto ha saldo Avere, per un importo pari a $|S|$.</li>
+<li>Se $S=0$, il conto è azzerato.</li>
+</ul>
+<p>Per costruire il bilancio si usa il <strong>saldo finale</strong>, non il singolo movimento.</p>
+
+<h2>3. Prima parte: operazioni 2021</h2>
+<p>Undici operazioni. I punti 1–3 riprendono un esercizio già iniziato nell'incontro precedente. Ogni tabella ha le colonne: conto, natura, documento, sezione, Dare/Avere, importo.</p>
+
+<h3>Punto 1 — Capitale sociale</h3>
+<p>Conferimento iniziale in banca di €300.000, a fronte di capitale sociale dello stesso importo.</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Documento</th><th>Sezione</th><th>D/A</th><th>Importo</th></tr></thead>
+<tbody>
+<tr><td>Conto corrente</td><td>F</td><td>SP</td><td>AC</td><td>D</td><td>€300.000</td></tr>
+<tr><td>Capitale sociale</td><td>E</td><td>SP</td><td>PN</td><td>A</td><td>€300.000</td></tr>
+</tbody>
+</table></div>
+<p>Entrano soldi in banca e aumentano i mezzi propri.</p>
+
+<h3>Punto 2 — Accensione del mutuo</h3>
+<p>La banca eroga un mutuo di €1.000.000.</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Documento</th><th>Sezione</th><th>D/A</th><th>Importo</th></tr></thead>
+<tbody>
+<tr><td>Conto corrente</td><td>F</td><td>SP</td><td>AC</td><td>D</td><td>€1.000.000</td></tr>
+<tr><td>Mutuo</td><td>F</td><td>SP</td><td>PNC</td><td>A</td><td>€1.000.000</td></tr>
+</tbody>
+</table></div>
+<p>Entrano soldi, ma nasce anche un debito: il milione ricevuto <strong>non è un ricavo</strong>.</p>
+
+<h3>Punto 3 — Impianti e ammortamento</h3>
+<p>Acquisto di impianti per €900.000 pagati tramite banca e quota di ammortamento annuale di €100.000.</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Documento</th><th>Sezione</th><th>D/A</th><th>Importo</th></tr></thead>
+<tbody>
+<tr><td>Impianti</td><td>E</td><td>SP</td><td>ANC</td><td>D</td><td>€900.000</td></tr>
+<tr><td>Conto corrente</td><td>F</td><td>SP</td><td>AC</td><td>A</td><td>€900.000</td></tr>
+<tr><td>Ammortamento impianti</td><td>E</td><td>CE</td><td>GC</td><td>D</td><td>€100.000</td></tr>
+<tr><td>Fondo ammortamento impianti</td><td>E</td><td>SP</td><td>PNC*</td><td>A</td><td>€100.000</td></tr>
+</tbody>
+</table></div>
+<p>L'acquisto registra il bene pluriennale; l'ammortamento registra la quota di costo attribuita all'anno.</p>
+<p><em>* Il docente colloca il fondo ammortamento nel PNC del suo prospetto; questa impostazione viene mantenuta nelle soluzioni (vedi la precisazione nel paragrafo 4).</em></p>
+
+<h3>Punto 4 — Stipendi</h3>
+<p>Pagamento tramite banca di stipendi per €500.000.</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Documento</th><th>Sezione</th><th>D/A</th><th>Importo</th></tr></thead>
+<tbody>
+<tr><td>Stipendi</td><td>E</td><td>CE</td><td>GC</td><td>D</td><td>€500.000</td></tr>
+<tr><td>Conto corrente</td><td>F</td><td>SP</td><td>AC</td><td>A</td><td>€500.000</td></tr>
+</tbody>
+</table></div>
+<p>Il costo va nel CE; l'uscita di denaro riduce la banca.</p>
+
+<h3>Punto 5 — Accantonamento TFR</h3>
+<p>Accantonamento annuale per TFR di €50.000.</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Documento</th><th>Sezione</th><th>D/A</th><th>Importo</th></tr></thead>
+<tbody>
+<tr><td>Quota TFR</td><td>E</td><td>CE</td><td>GC</td><td>D</td><td>€50.000</td></tr>
+<tr><td>Fondo TFR</td><td>F</td><td>SP</td><td>PNC</td><td>A</td><td>€50.000</td></tr>
+</tbody>
+</table></div>
+<p>Non c'è nessun pagamento in banca: si registra un costo e aumenta il debito verso i dipendenti.</p>
+
+<h3>Punto 6 — Materie prime</h3>
+<p>Acquisto di materie prime per €1.000.000: €700.000 pagati tramite banca e €300.000 da pagare ai fornitori nel breve periodo.</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Documento</th><th>Sezione</th><th>D/A</th><th>Importo</th></tr></thead>
+<tbody>
+<tr><td>Materie prime — acquisti</td><td>E</td><td>CE</td><td>GC</td><td>D</td><td>€1.000.000</td></tr>
+<tr><td>Conto corrente</td><td>F</td><td>SP</td><td>AC</td><td>A</td><td>€700.000</td></tr>
+<tr><td>Debiti verso fornitori</td><td>F</td><td>SP</td><td>PC</td><td>A</td><td>€300.000</td></tr>
+</tbody>
+</table></div>
+<p>Il costo è l'<strong>intero</strong> valore dell'acquisto, non solo la parte già pagata: $1.000.000=700.000+300.000$.</p>
+
+<h3>Punto 7 — Interessi passivi</h3>
+<p>Pagamento di interessi passivi per €150.000.</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Documento</th><th>Sezione</th><th>D/A</th><th>Importo</th></tr></thead>
+<tbody>
+<tr><td>Interessi passivi</td><td>E</td><td>CE</td><td>GF</td><td>D</td><td>€150.000</td></tr>
+<tr><td>Conto corrente</td><td>F</td><td>SP</td><td>AC</td><td>A</td><td>€150.000</td></tr>
+</tbody>
+</table></div>
+<p>Non si rimborsa il capitale del mutuo: si paga il <em>costo</em> del finanziamento (alla lavagna: «costo per prendere denaro»).</p>
+
+<h3>Punto 8 — Vendita dei prodotti</h3>
+<p>Vendita di prodotti finiti per €1.500.000: €1.000.000 incassati e €500.000 venduti a credito.</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Documento</th><th>Sezione</th><th>D/A</th><th>Importo</th></tr></thead>
+<tbody>
+<tr><td>Conto corrente</td><td>F</td><td>SP</td><td>AC</td><td>D</td><td>€1.000.000</td></tr>
+<tr><td>Crediti verso clienti</td><td>F</td><td>SP</td><td>AC</td><td>D</td><td>€500.000</td></tr>
+<tr><td>Prodotti finiti — ricavi di vendita</td><td>E</td><td>CE</td><td>GC</td><td>A</td><td>€1.500.000</td></tr>
+</tbody>
+</table></div>
+<p>Il ricavo è €1.500.000 anche se non è stato tutto incassato. Il credito (la «promessa» del cliente di pagare) rappresenta la parte ancora da ricevere.</p>
+
+<h3>Punto 9 — Rimanenze finali</h3>
+<p>Registrazione di rimanenze finali di prodotti finiti per €500.000 (la variazione registrata è anch'essa di €500.000).</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Documento</th><th>Sezione</th><th>D/A</th><th>Importo</th></tr></thead>
+<tbody>
+<tr><td>Rimanenze di prodotti finiti</td><td>E</td><td>SP</td><td>AC</td><td>D</td><td>€500.000</td></tr>
+<tr><td>Variazione rimanenze prodotti finiti</td><td>E</td><td>CE</td><td>GC</td><td>A</td><td>€500.000</td></tr>
+</tbody>
+</table></div>
+<ul>
+<li>Nello SP si registra il valore dei prodotti ancora in magazzino.</li>
+<li>Nel CE si registra l'incremento delle rimanenze, che contribuisce positivamente al risultato dell'anno.</li>
+</ul>
+<div class="box warn">
+<div class="bt">Attenzione</div>
+<p>Il Dare della prima riga <strong>non</strong> è un «costo di mantenimento del magazzino»: registra l'aumento di un'attività. La spiegazione orale su questo punto è poco precisa.</p>
+</div>
+
+<h3>Punto 10 — Proventi straordinari</h3>
+<p>Incasso tramite banca di proventi straordinari per €500.000 (la causa specifica non viene indicata).</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Documento</th><th>Sezione</th><th>D/A</th><th>Importo</th></tr></thead>
+<tbody>
+<tr><td>Conto corrente</td><td>F</td><td>SP</td><td>AC</td><td>D</td><td>€500.000</td></tr>
+<tr><td>Proventi straordinari</td><td>E</td><td>CE</td><td>GS</td><td>A</td><td>€500.000</td></tr>
+</tbody>
+</table></div>
+
+<h3>Punto 11 — Imposte</h3>
+<p>Le imposte sono il 50% dell'utile lordo e vengono registrate come debito tributario. Il loro valore si determina <strong>dopo</strong> aver costruito il CE.</p>
+$$\text{Imposte}=700.000\times 50\%=350.000$$
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Documento</th><th>Sezione</th><th>D/A</th><th>Importo</th></tr></thead>
+<tbody>
+<tr><td>Imposte</td><td>E</td><td>CE</td><td>GFIS</td><td>D</td><td>€350.000</td></tr>
+<tr><td>Debiti tributari</td><td>F</td><td>SP</td><td>PC</td><td>A</td><td>€350.000</td></tr>
+</tbody>
+</table></div>
+<p>Il 50% è il dato dell'esercizio, non un'aliquota da applicare automaticamente ad altri casi. Qui non escono soldi dal conto corrente.</p>
+
+<h2>4. Bilancio finale del 2021</h2>
+
+<h3>Mastrino del conto corrente</h3>
+<div class="tbl"><table>
+<thead><tr><th>Punto</th><th>Operazione</th><th>Dare</th><th>Avere</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Conferimento dei soci</td><td>€300.000</td><td>—</td></tr>
+<tr><td>2</td><td>Erogazione mutuo</td><td>€1.000.000</td><td>—</td></tr>
+<tr><td>3</td><td>Acquisto impianti</td><td>—</td><td>€900.000</td></tr>
+<tr><td>4</td><td>Pagamento stipendi</td><td>—</td><td>€500.000</td></tr>
+<tr><td>6</td><td>Pagamento materie prime</td><td>—</td><td>€700.000</td></tr>
+<tr><td>7</td><td>Pagamento interessi</td><td>—</td><td>€150.000</td></tr>
+<tr><td>8</td><td>Incasso vendite</td><td>€1.000.000</td><td>—</td></tr>
+<tr><td>10</td><td>Incasso proventi straordinari</td><td>€500.000</td><td>—</td></tr>
+<tr><td><strong>Totale</strong></td><td></td><td><strong>€2.800.000</strong></td><td><strong>€2.250.000</strong></td></tr>
+</tbody>
+</table></div>
+$$\text{Saldo banca}=2.800.000-2.250.000=550.000\ \text{in Dare}$$
+<p>È il denaro disponibile alla fine dell'anno.</p>
+
+<h3>Conto economico</h3>
+<div class="tbl"><table>
+<thead><tr><th>Gestione</th><th>Voce</th><th>Importo</th></tr></thead>
+<tbody>
+<tr><td>Caratteristica</td><td>Ricavi di vendita prodotti finiti</td><td>+ €1.500.000</td></tr>
+<tr><td>Caratteristica</td><td>Materie prime</td><td>− €1.000.000</td></tr>
+<tr><td>Caratteristica</td><td>Stipendi</td><td>− €500.000</td></tr>
+<tr><td>Caratteristica</td><td>Quota TFR</td><td>− €50.000</td></tr>
+<tr><td>Caratteristica</td><td>Ammortamento impianti</td><td>− €100.000</td></tr>
+<tr><td>Caratteristica</td><td>Variazione rimanenze prodotti finiti</td><td>+ €500.000</td></tr>
+<tr><td></td><td><strong>EBIT</strong></td><td><strong>€350.000</strong></td></tr>
+<tr><td>Finanziaria</td><td>Interessi passivi</td><td>− €150.000</td></tr>
+<tr><td></td><td><strong>Risultato della gestione ordinaria</strong></td><td><strong>€200.000</strong></td></tr>
+<tr><td>Straordinaria</td><td>Proventi straordinari</td><td>+ €500.000</td></tr>
+<tr><td></td><td><strong>Utile lordo</strong></td><td><strong>€700.000</strong></td></tr>
+<tr><td>Fiscale</td><td>Imposte (50% dell'utile lordo)</td><td>− €350.000</td></tr>
+<tr><td></td><td><strong>Utile netto</strong></td><td><strong>€350.000</strong></td></tr>
+</tbody>
+</table></div>
+<p>Il risultato del CE va riportato nello SP, nel patrimonio netto, come utile d'esercizio. Non è una nuova entrata di denaro: è il risultato economico dell'anno.</p>
+
+<h3>Stato patrimoniale</h3>
+<p>Schema del docente: impianti al costo storico e fondo ammortamento esposto nella colonna destra.</p>
+<div class="tbl"><table>
+<thead><tr><th>Attivo</th><th>Importo</th><th>Patrimonio netto e passivo</th><th>Importo</th></tr></thead>
+<tbody>
+<tr><td><strong>Attivo non corrente</strong></td><td></td><td><strong>Patrimonio netto</strong></td><td></td></tr>
+<tr><td>Impianti</td><td>€900.000</td><td>Capitale sociale</td><td>€300.000</td></tr>
+<tr><td></td><td></td><td>Utile d'esercizio</td><td>€350.000</td></tr>
+<tr><td><strong>Totale ANC</strong></td><td><strong>€900.000</strong></td><td><strong>Totale PN</strong></td><td><strong>€650.000</strong></td></tr>
+<tr><td><strong>Attivo corrente</strong></td><td></td><td><strong>Passivo non corrente</strong></td><td></td></tr>
+<tr><td>Conto corrente</td><td>€550.000</td><td>Mutuo</td><td>€1.000.000</td></tr>
+<tr><td>Crediti verso clienti</td><td>€500.000</td><td>Fondo ammortamento impianti*</td><td>€100.000</td></tr>
+<tr><td>Rimanenze prodotti finiti</td><td>€500.000</td><td>Fondo TFR</td><td>€50.000</td></tr>
+<tr><td><strong>Totale AC</strong></td><td><strong>€1.550.000</strong></td><td><strong>Totale PNC</strong></td><td><strong>€1.150.000</strong></td></tr>
+<tr><td></td><td></td><td><strong>Passivo corrente</strong></td><td></td></tr>
+<tr><td></td><td></td><td>Debiti verso fornitori</td><td>€300.000</td></tr>
+<tr><td></td><td></td><td>Debiti tributari</td><td>€350.000</td></tr>
+<tr><td></td><td></td><td><strong>Totale PC</strong></td><td><strong>€650.000</strong></td></tr>
+<tr><td><strong>Totale attivo</strong></td><td><strong>€2.450.000</strong></td><td><strong>Totale PN e passivo</strong></td><td><strong>€2.450.000</strong></td></tr>
+</tbody>
+</table></div>
+$$2.450.000=2.450.000$$
+<p>Il pareggio è un controllo necessario, ma non dimostra da solo che ogni conto sia classificato correttamente.</p>
+
+<div class="box def">
+<div class="bt">Precisazione sul fondo ammortamento</div>
+<p>Il fondo ammortamento non è un debito verso qualcuno e non è una riserva di denaro in banca. Nella rappresentazione civilistica le immobilizzazioni sono esposte nell'attivo <strong>al netto</strong> degli ammortamenti:</p>
+$$\text{Impianti netti}=900.000-100.000=800.000$$
+<div class="tbl"><table>
+<thead><tr><th>Grandezza</th><th>Schema del docente</th><th>Rappresentazione netta</th></tr></thead>
+<tbody>
+<tr><td>Impianti nell'attivo</td><td>€900.000</td><td>€800.000</td></tr>
+<tr><td>Fondo ammortamento (colonna destra)</td><td>€100.000</td><td>Non esposto come passività</td></tr>
+<tr><td>Totale attivo</td><td>€2.450.000</td><td>€2.350.000</td></tr>
+<tr><td>Totale PN e passività</td><td>€2.450.000</td><td>€2.350.000</td></tr>
+<tr><td>Utile netto</td><td>€350.000</td><td>€350.000</td></tr>
+</tbody>
+</table></div>
+<p>All'esercitazione si riconosce lo schema del docente; la rappresentazione netta chiarisce la natura del fondo senza cambiare il risultato economico.</p>
+</div>
+
+<h2>5. Seconda parte: operazioni 2022</h2>
+
+<h3>Come si passa all'anno successivo</h3>
+<p>Nel nuovo anno non si riparte da zero: i saldi dello SP precedente sono la situazione iniziale. Il CE, invece, raccoglie costi e ricavi del <em>nuovo</em> esercizio. Alcuni importi vengono richiamati senza essere riscritti nel testo delle operazioni:</p>
+<ul>
+<li>il mastrino della banca parte da €550.000;</li>
+<li>crediti verso clienti iniziali: €500.000;</li>
+<li>debiti verso fornitori iniziali: €300.000;</li>
+<li>debiti tributari iniziali: €350.000;</li>
+<li>fondo TFR iniziale: €50.000;</li>
+<li>fondo ammortamento impianti iniziale: €100.000.</li>
+</ul>
+<p>Se il testo dice «si saldano i debiti tributari», l'importo va recuperato dallo SP precedente. Il pagamento riduce il debito e la banca: <strong>non</strong> registra di nuovo il costo delle imposte dell'anno passato.</p>
+<p>L'utile del 2021 non diventa un ricavo del 2022. Gli <strong>utili a nuovo</strong> sono la voce che conserva gli utili precedenti; la destinazione concreta dell'utile va letta nelle operazioni del caso.</p>
+
+<h3>Punto 1 — Nuovo macchinario</h3>
+<p>Acquisto tramite banca di un macchinario da €100.000, vita utile 5 anni, valore residuo finale €20.000.</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Documento</th><th>Sezione</th><th>D/A</th><th>Importo</th></tr></thead>
+<tbody>
+<tr><td>Macchinario</td><td>E</td><td>SP</td><td>ANC</td><td>D</td><td>€100.000</td></tr>
+<tr><td>Conto corrente</td><td>F</td><td>SP</td><td>AC</td><td>A</td><td>€100.000</td></tr>
+</tbody>
+</table></div>
+<p>Quota annuale a quote costanti:</p>
+$$\text{Ammortamento annuo}=\frac{\text{Costo}-\text{Valore residuo}}{\text{Vita utile}}=\frac{100.000-20.000}{5}=16.000$$
+<p>Il valore da ammortizzare è €80.000, non €100.000.</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Documento</th><th>Sezione</th><th>D/A</th><th>Importo</th></tr></thead>
+<tbody>
+<tr><td>Ammortamento macchinario</td><td>E</td><td>CE</td><td>GC</td><td>D</td><td>€16.000</td></tr>
+<tr><td>Fondo ammortamento macchinario</td><td>E</td><td>SP</td><td>PNC*</td><td>A</td><td>€16.000</td></tr>
+</tbody>
+</table></div>
+<p>Il docente registra l'intera quota annuale nell'esercizio. L'asterisco mantiene la stessa convenzione didattica sul fondo ammortamento del 2021.</p>
+
+<h3>Punto 2 — Ammortamento vecchi impianti</h3>
+<p>Gli impianti acquistati nel 2021 hanno una quota annuale di €100.000, recuperata dalla prima parte dell'esercizio.</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Documento</th><th>Sezione</th><th>D/A</th><th>Importo</th></tr></thead>
+<tbody>
+<tr><td>Ammortamento impianti</td><td>E</td><td>CE</td><td>GC</td><td>D</td><td>€100.000</td></tr>
+<tr><td>Fondo ammortamento impianti</td><td>E</td><td>SP</td><td>PNC*</td><td>A</td><td>€100.000</td></tr>
+</tbody>
+</table></div>
+<p>Il fondo accumulato diventa $100.000_{\text{iniziali}}+100.000_{\text{nuovi}}=200.000$. Nel CE 2022 entra <strong>solo la quota del 2022</strong> (€100.000), non l'intero fondo di €200.000.</p>
+
+<h3>Punto 3 — Stipendi e contributi</h3>
+<p>Pagamento tramite banca di stipendi e contributi per €600.000, trattati come un'unica voce, distinta dal TFR.</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Documento</th><th>Sezione</th><th>D/A</th><th>Importo</th></tr></thead>
+<tbody>
+<tr><td>Stipendi e contributi</td><td>E</td><td>CE</td><td>GC</td><td>D</td><td>€600.000</td></tr>
+<tr><td>Conto corrente</td><td>F</td><td>SP</td><td>AC</td><td>A</td><td>€600.000</td></tr>
+</tbody>
+</table></div>
+
+<h3>Punto 4 — Accantonamento TFR</h3>
+<p>Nuova quota annuale TFR di €60.000.</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Documento</th><th>Sezione</th><th>D/A</th><th>Importo</th></tr></thead>
+<tbody>
+<tr><td>Quota TFR</td><td>E</td><td>CE</td><td>GC</td><td>D</td><td>€60.000</td></tr>
+<tr><td>Fondo TFR</td><td>F</td><td>SP</td><td>PNC</td><td>A</td><td>€60.000</td></tr>
+</tbody>
+</table></div>
+<p>Fondo accumulato (considerando queste sole operazioni): $50.000_{\text{iniziali}}+60.000_{\text{nuovi}}=110.000$. Nel CE 2022 il costo è €60.000; nello SP il fondo arriva a €110.000, salvo pagamenti o altre operazioni successive.</p>
+
+<h3>Punto 5 — Materie prime</h3>
+<p>Acquisto di materie prime pagato tramite banca. Il docente rimanda al «valore indicato nel testo» senza pronunciare l'importo: lo indico con $X$.</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Documento</th><th>Sezione</th><th>D/A</th><th>Importo</th></tr></thead>
+<tbody>
+<tr><td>Materie prime — acquisti</td><td>E</td><td>CE</td><td>GC</td><td>D</td><td>$X$</td></tr>
+<tr><td>Conto corrente</td><td>F</td><td>SP</td><td>AC</td><td>A</td><td>$X$</td></tr>
+</tbody>
+</table></div>
+<p>Il bilancio finale del 2022 non si può ancora costruire: manca questo numero e le operazioni successive, che il docente lascia da svolgere alla prossima lezione.</p>
+
+<h2>6. Metodo da usare all'esame</h2>
+<ol>
+<li>Leggi lo SP iniziale, se presente, e annota i saldi da riportare.</li>
+<li>Per ogni operazione individua <em>cosa succede</em> e <em>come viene regolata</em>.</li>
+<li>Apri i conti e compila natura, documento, sezione, Dare/Avere e importo.</li>
+<li>Controlla che Dare e Avere della singola operazione coincidano.</li>
+<li>Costruisci i mastrini dei conti movimentati più volte.</li>
+<li>Compila il CE fino all'utile lordo.</li>
+<li>Calcola le imposte e completa la relativa scrittura.</li>
+<li>Determina l'utile netto e riportalo nel patrimonio netto.</li>
+<li>Compila lo SP con i saldi finali.</li>
+<li>Verifica che attività = patrimonio netto + passività.</li>
+</ol>
+
+<div class="box warn">
+<div class="bt">Attenzione</div>
+<ul>
+<li><strong>Costo non significa pagamento, e ricavo non significa incasso.</strong> Vendite a credito, acquisti non ancora pagati, TFR e ammortamenti sono gli esempi della lezione per imparare a separarli.</li>
+<li>Il capitale del mutuo non è un ricavo; gli interessi sono un onere del CE.</li>
+<li>Il fondo ammortamento non è un debito né denaro accantonato in banca.</li>
+<li>L'utile netto non è una nuova entrata di denaro.</li>
+</ul>
+</div>
+
+<h2>Da ricordare per l'esame</h2>
+<ul>
+<li>CE = «film» dell'anno (scalare, per natura: GC → EBIT, GF, GS, GFIS → utile netto); SP = «fotografia» finale.</li>
+<li>Per ogni operazione: totale Dare = totale Avere, con anche tre o più righe.</li>
+<li>Metodo: «cosa succede?» e «come viene regolata?» per scegliere i conti.</li>
+<li>Il mastrino raccoglie i movimenti di un conto; il saldo $S=\text{Dare}-\text{Avere}$ va nello SP.</li>
+<li>Ammortamento annuo $=\dfrac{\text{costo}-\text{valore residuo}}{\text{vita utile}}$; nel CE entra solo la quota dell'anno.</li>
+<li>Quota TFR = costo (CE); fondo TFR = debito accumulato (SP).</li>
+<li>Rimanenze finali: Dare nello SP, variazione rimanenze in Avere nel CE.</li>
+<li>Imposte = costo nel CE e debito tributario nello SP, finché non vengono pagate.</li>
+<li>Risultato 2021: EBIT €350.000, utile lordo €700.000, utile netto €350.000, totale attivo €2.450.000.</li>
+<li>Nell'anno successivo si riparte dai saldi dello SP, non da zero; il CE riparte da zero.</li>
+</ul>
