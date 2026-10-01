@@ -47,15 +47,6 @@ button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   z-index: 20; font-family: var(--ui);
 }
 .brand { font-size: 14px; font-weight: 500; color: var(--muted); }
-.brand-btn {
-  height: 38px; padding: 0 10px; margin-left: -10px;
-  display: inline-flex; align-items: center; gap: 6px;
-  border: 1px solid transparent; border-radius: 10px; background: transparent;
-  color: var(--muted); font-family: var(--ui); cursor: pointer;
-}
-.brand-btn:hover, .brand-btn[aria-expanded="true"] { background: var(--surface); border-color: var(--line); }
-.chev { width: 16px; height: 16px; flex: none; transition: transform .15s ease; }
-.brand-btn[aria-expanded="true"] .chev { transform: rotate(180deg); }
 .aa {
   height: 38px; min-width: 46px; padding: 0 12px;
   display: inline-flex; align-items: baseline; justify-content: center; gap: 1px;
@@ -72,13 +63,7 @@ button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   box-shadow: var(--shadow); padding: 14px; z-index: 40; font-family: var(--ui);
   transform-origin: top right; animation: pop .14s ease-out;
 }
-.mode-menu {
-  position: fixed; top: 58px; left: 12px; width: min(260px, calc(100vw - 24px));
-  background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
-  box-shadow: var(--shadow); padding: 6px; z-index: 40; font-family: var(--ui);
-  transform-origin: top left; animation: pop .14s ease-out;
-}
-.settings[hidden], .day-menu[hidden], .mode-menu[hidden] { display: none; }
+.settings[hidden], .day-menu[hidden] { display: none; }
 .settings .row + .row { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--line); }
 .lbl { display: block; font-size: 13px; color: var(--muted); margin-bottom: 8px; }
 .stepper { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
@@ -175,7 +160,7 @@ th { font: 600 .85rem var(--ui); color: var(--muted); border-bottom: 1px solid v
   * { animation: none !important; transition: none !important; }
 }
 @media print {
-  .topbar, .nav, .settings, .day-menu, .mode-menu { display: none !important; }
+  .topbar, .nav, .settings, .day-menu { display: none !important; }
   main { padding: 0; }
 }.nav {
   position: fixed; left: 50%; bottom: 18px; transform: translateX(-50%) scale(1);

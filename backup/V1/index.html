@@ -24,10 +24,7 @@
 <body>
 
 <header class="topbar">
-  <button class="brand-btn" id="modeBtn" aria-expanded="false" aria-controls="modeMenu" aria-haspopup="menu">
-    <span class="brand">Impresa e Decisioni Strategiche</span>
-    <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
-  </button>
+  <span class="brand">Impresa e Decisioni Strategiche</span>
   <button class="aa" id="aaBtn" aria-label="Aspetto e dimensione testo" aria-expanded="false" aria-controls="settings">
     <span class="s">a</span><span class="l">A</span>
   </button>
@@ -57,18 +54,16 @@
   </div>
 </div>
 
-<div class="mode-menu" id="modeMenu" role="menu" hidden></div>
-
 <main id="content" aria-live="polite"></main>
 
 <div class="day-menu" id="dayMenu" role="menu" hidden></div>
 
-<nav class="nav" id="navBar" aria-label="Navigazione tra gli appunti">
-  <button class="arrow" id="prevBtn" aria-label="Appunto precedente">
+<nav class="nav" id="navBar" aria-label="Navigazione tra i Day">
+  <button class="arrow" id="prevBtn" aria-label="Day precedente">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
   </button>
-  <button class="dots" id="dotsBtn" aria-label="Scegli l'appunto" aria-expanded="false" aria-controls="dayMenu"></button>
-  <button class="arrow" id="nextBtn" aria-label="Appunto successivo">
+  <button class="dots" id="dotsBtn" aria-label="Scegli il Day" aria-expanded="false" aria-controls="dayMenu"></button>
+  <button class="arrow" id="nextBtn" aria-label="Day successivo">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
   </button>
 </nav>
@@ -76,14 +71,11 @@
 
 <!-- =====================================================================
      APPUNTI
-     Gli appunti NON stanno in questo file: ogni giornata è un frammento
-     HTML nella cartella appunti/, caricato da script.js con fetch().
-     Due sezioni, selezionabili dal menu sul nome della materia (in alto a sinistra):
-       - Lezioni:      appunti/day-01.html, day-02.html, ...
-       - Esercitazioni: appunti/esercitazione-1.html, esercitazione-2.html, ...
-     Per aggiungere un nuovo appunto: duplica appunti/_template-day.html,
-     rinominalo e registralo nel catalogo giusto ("days" oppure "esercitazioni")
-     in script.js. Pallini e menu si aggiornano da soli.
+     Gli appunti NON stanno più in questo file: ogni giornata è un frammento
+     HTML nella cartella appunti/ (day-01.html, day-02.html, ...), caricato da
+     script.js con fetch(). Per aggiungere un nuovo Day: duplica
+     appunti/_template-day.html, rinominalo (es. day-04.html) e registralo
+     nel catalogo "days" in script.js. Pallini e menu si aggiornano da soli.
      ===================================================================== -->
 
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
