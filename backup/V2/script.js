@@ -52,12 +52,6 @@ var esercitazioni = [
     n: 1,
     title: 'Partita doppia, mastrini, CE e SP',
     file: 'appunti/esercitazione-1.html'
-  },
-  {
-    n: 2,
-    title: 'Home Design 2022, indici di bilancio e caso Visa–Mastercard',
-    file: 'appunti/esercitazione-2.html',
-    date: '2026-10-05'   /* aaaa-mm-gg: facoltativa, se manca non viene mostrata */
   }
 ];
 esercitazioni.sort(function (a, b) { return a.n - b.n; });
@@ -94,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var modeBtn = $('modeBtn'), modeMenu = $('modeMenu');
   var prevBtn = $('prevBtn'), nextBtn = $('nextBtn');
   var aaBtn = $('aaBtn'), settings = $('settings');
-  var dock = $('dock'), tocBtn = $('tocBtn'), tocPanel = $('tocPanel');
+  var nav = $('navBar');
   var mode = 'lezioni';
   var cur = 0;
   var requestId = 0;   /* per ignorare risposte fetch "vecchie" se cambio appunto velocemente */
@@ -113,109 +107,6 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   }
-
-  /* ---------- Data: "Mon 05/10/2026" ---------- */
-  var WD = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-  function fmtDate(str, short) {
-    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(str || '');
-    if (!m) return '';
-    var dt = new Date(+m[1], +m[2] - 1, +m[3]);
-    return WD[dt.getDay()] + ', ' + m[3] + '/' + m[2] + (short ? '' : '/' + m[1]);
-  }
-
-  /* ---------- Indice della pagina ---------- */
-  var tocHeads = [], tocItems = [];
-  function buildToc() {
-    tocPanel.innerHTML = '';
-    tocHeads = []; tocItems = [];
-    var hs = main.querySelectorAll('h2, h3'), i = 0;
-    var t = document.createElement('div');
-    t.className = 'toc-t'; t.textContent = 'Indice';
-    tocPanel.appendChild(t);
-    Array.prototype.forEach.call(hs, function (h) {
-      if (!h.id) h.id = 'sec-' + (++i);
-      var b = document.createElement('button');
-      b.className = 'toc-i' + (h.tagName === 'H3' ? ' sub' : '');
-      b.textContent = h.textContent;
-      b.title = h.textContent;
-      tocHeads.push(h); tocItems.push(b);
-      b.addEventListener('click', function () {
-        h.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        closeAll();
-      });
-      tocPanel.appendChild(b);
-    });
-    tocBtn.hidden = !hs.length;
-    layoutToc();
-    updateSpy();
-  }
-  /* evidenzia nell'indice la sezione che stai leggendo */
-  var spyOn = -1;
-  function updateSpy() {
-    var k = -1;
-    for (var i = 0; i < tocHeads.length; i++) {
-      if (tocHeads[i].getBoundingClientRect().top <= 100) k = i; else break;
-    }
-    if (k === spyOn) return;
-    spyOn = k;
-    tocItems.forEach(function (b, i) { b.classList.toggle('on', i === k); });
-    if (k >= 0 && !tocPanel.hidden) {
-      var it = tocItems[k];
-      tocPanel.scrollTop = it.offsetTop - tocPanel.clientHeight / 2 + it.offsetHeight / 2;
-    }
-  }
-  var spyTick = false;
-  window.addEventListener('scroll', function () {
-    if (!tocPanel.hidden) closeToc();   /* scorri = non ti serve più l'indice */
-    if (!spyTick) { spyTick = true; requestAnimationFrame(function () { spyTick = false; updateSpy(); }); }
-  }, { passive: true });
-  /* Se ai lati del testo c'è abbastanza spazio (PC/tablet) il pulsante sta a sinistra,
-     con margini proporzionali allo spazio libero; altrimenti si affianca alla barra in basso. */
-  function layoutToc() {
-    var gap = main.getBoundingClientRect().left;
-    var side = gap >= 220;
-    document.body.classList.toggle('side', side);
-    if (side) {
-      if (tocBtn.parentNode !== document.body) document.body.appendChild(tocBtn);
-      var x = Math.round(gap * 0.08);
-      tocBtn.style.left = x + 'px';
-      tocPanel.style.left = x + 'px';
-      tocPanel.style.width = Math.min(300, Math.round(gap * 0.84)) + 'px';
-    } else {
-      if (tocBtn.parentNode !== dock) dock.appendChild(tocBtn);
-      tocBtn.style.left = ''; tocPanel.style.left = ''; tocPanel.style.width = '';
-    }
-  }
-  var tocCloseT;
-  function hideTocNow() {
-    clearTimeout(tocCloseT);
-    tocPanel.classList.remove('closing');
-    tocPanel.hidden = true;
-    tocBtn.setAttribute('aria-expanded', 'false');
-  }
-  function closeToc() {   /* chiusura con fade + il triangolo torna indietro */
-    if (tocPanel.hidden || tocPanel.classList.contains('closing')) return;
-    tocBtn.setAttribute('aria-expanded', 'false');
-    tocPanel.classList.add('closing');
-    tocCloseT = setTimeout(hideTocNow, 220);
-  }
-  function openToc() {
-    clearTimeout(tocCloseT);
-    tocPanel.classList.remove('closing');
-    tocPanel.hidden = false;
-    tocBtn.setAttribute('aria-expanded', 'true');
-    spyOn = -2; updateSpy();
-    tocPanel.style.animation = 'none';   /* l'animazione parte dal centro del cerchio */
-    var f = tocBtn.getBoundingClientRect(), p = tocPanel.getBoundingClientRect();
-    tocPanel.style.transformOrigin = (f.left + f.width / 2 - p.left) + 'px ' + (f.top + f.height / 2 - p.top) + 'px';
-    tocPanel.style.animation = '';
-  }
-  tocBtn.addEventListener('click', function () {
-    var wasOpen = !tocPanel.hidden && !tocPanel.classList.contains('closing');
-    closeAll();
-    if (!wasOpen) openToc();
-  });
-  window.addEventListener('resize', layoutToc);
 
   /* ---------- Hash URL: #day-N (lezioni), #es-N (esercitazioni) ---------- */
   function parseHash() {
@@ -303,7 +194,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var p = document.createElement('p');
     p.textContent = 'Questa sezione non contiene ancora nessun appunto. Quando ne aggiungerai uno al catalogo, comparirà qui.';
     main.appendChild(ey); main.appendChild(h); main.appendChild(p);
-    buildToc();
     main.removeAttribute('aria-busy');
 
     if (animate) { main.classList.remove('fade'); void main.offsetWidth; main.classList.add('fade'); }
@@ -322,17 +212,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     /* titolo subito visibile, poi stato di caricamento */
     main.innerHTML = '<p class="eyebrow"></p><h1></h1>';
-    var ey = main.querySelector('.eyebrow');
-    var lab = document.createElement('span');
-    lab.textContent = cats[mode].label + ' ' + d.n;
-    ey.appendChild(lab);
-    var ds = fmtDate(d.date);
-    if (ds) {
-      var dd = document.createElement('span');
-      dd.className = 'edate'; dd.textContent = ds;
-      ey.appendChild(dd);
-    }
-    hideTocNow();
+    main.querySelector('.eyebrow').textContent = cats[mode].label + ' ' + d.n;
     main.querySelector('h1').textContent = d.title;
     main.setAttribute('aria-busy', 'true');
     showLoading();
@@ -350,7 +230,6 @@ document.addEventListener('DOMContentLoaded', function () {
       main.insertAdjacentHTML('beforeend', html);
       main.removeAttribute('aria-busy');
       renderMath();
-      buildToc();
     }).catch(function (err) {
       if (myRequest !== requestId) return;
       var status = main.querySelector('[role="status"]');
@@ -397,9 +276,8 @@ document.addEventListener('DOMContentLoaded', function () {
       var b = document.createElement('button');
       b.className = 'day-item';
       b.setAttribute('role', 'menuitem');
-      b.innerHTML = '<span class="mk">○</span><span class="tt"></span><span class="dd"></span>';
-      b.querySelector('.tt').textContent = d.n + '. ' + d.title;
-      b.querySelector('.dd').textContent = fmtDate(d.date, true);
+      b.innerHTML = '<span class="mk">○</span><span></span>';
+      b.lastChild.textContent = d.n + '. ' + d.title;
       b.addEventListener('click', function () { closeAll(); show(k, true, true); });
       menu.appendChild(b);
     });
@@ -434,12 +312,12 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function setOpen(panel, btn, open) { panel.hidden = !open; btn.setAttribute('aria-expanded', open ? 'true' : 'false'); }
-  function closeAll() { setOpen(menu, dotsBtn, false); setOpen(settings, aaBtn, false); setOpen(modeMenu, modeBtn, false); closeToc(); }
+  function closeAll() { setOpen(menu, dotsBtn, false); setOpen(settings, aaBtn, false); setOpen(modeMenu, modeBtn, false); }
 
   modeBtn.addEventListener('click', function () { var open = modeMenu.hidden; closeAll(); setOpen(modeMenu, modeBtn, open); });
   dotsBtn.addEventListener('click', function () { var open = menu.hidden; closeAll(); setOpen(menu, dotsBtn, open); });
   aaBtn.addEventListener('click', function () { var open = settings.hidden; closeAll(); setOpen(settings, aaBtn, open); });
-  document.addEventListener('click', function (e) { if (!e.target.closest('.day-menu, .dots, .settings, .aa, .mode-menu, .brand-btn, .toc, .toc-fab')) closeAll(); });
+  document.addEventListener('click', function (e) { if (!e.target.closest('.day-menu, .dots, .settings, .aa, .mode-menu, .brand-btn')) closeAll(); });
   prevBtn.addEventListener('click', function () { go(-1); });
   nextBtn.addEventListener('click', function () { go(1); });
   document.addEventListener('keydown', function (e) {
@@ -462,9 +340,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var y = window.scrollY;
     var goingDown = y > lastScrollY;
     var pastThreshold = y > 40;
-    var sh = goingDown && pastThreshold;
-    dock.classList.toggle('shrink', sh);
-    tocBtn.classList.toggle('shrink', sh);
+    if (goingDown && pastThreshold) nav.classList.add('shrink'); else nav.classList.remove('shrink');
     lastScrollY = y;
     navShrinkTicking = false;
   }
@@ -481,12 +357,9 @@ document.addEventListener('DOMContentLoaded', function () {
     $('zVal').textContent = zoom + '%';
     $('zMinus').disabled = zoom <= ZMIN;
     $('zPlus').disabled = zoom >= ZMAX;
-    $('zReset').disabled = zoom === 100;
-    layoutToc();
     store('ids-zoom', zoom);
   }
   $('zMinus').addEventListener('click', function () { zoom -= ZSTEP; applyZoom(); });
-  $('zReset').addEventListener('click', function () { zoom = 100; applyZoom(); });
   $('zPlus').addEventListener('click', function () { zoom += ZSTEP; applyZoom(); });
 
   /* ---------- Tema ---------- */

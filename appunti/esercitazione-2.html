@@ -1,0 +1,491 @@
+<p>Seconda esercitazione del modulo di analisi di bilancio. Si completa il caso <strong>HOME DESIGN</strong> (esercizio 2022, secondo anno di attività), poi si passa all'<strong>analisi di bilancio</strong> con gli indici di liquidità e di copertura, applicati al caso Visa–Mastercard.</p>
+
+<h2>1. Regole fondamentali</h2>
+
+<h3>I documenti del bilancio</h3>
+<div class="tbl"><table>
+<thead><tr><th>Documento</th><th>Che cosa rappresenta</th></tr></thead>
+<tbody>
+<tr><td>Conto economico (CE)</td><td>Costi e ricavi di competenza dell'esercizio; determina utile o perdita</td></tr>
+<tr><td>Stato patrimoniale (SP)</td><td>Situazione patrimoniale e finanziaria alla data di chiusura</td></tr>
+<tr><td>Rendiconto finanziario</td><td>Flussi di cassa dell'esercizio</td></tr>
+<tr><td>Nota integrativa</td><td>Dettagli delle voci e criteri di valutazione</td></tr>
+</tbody>
+</table></div>
+<p>Nel caso Home Design bisogna redigere CE e SP. Il CE risponde a: «durante l'anno l'azienda ha prodotto un utile o una perdita?». Lo SP risponde a: «alla fine dell'anno quali attività possiede e come sono finanziate?».</p>
+
+<h3>Competenza e pagamento</h3>
+<p>Il principio di competenza distingue il momento in cui un costo o ricavo appartiene economicamente all'esercizio dal momento in cui avviene pagamento o incasso. Due esempi del caso:</p>
+<ul>
+<li>le imposte del 2021 pagate nel 2022 <strong>non</strong> sono un nuovo costo del 2022: il pagamento estingue un debito precedente;</li>
+<li>l'affitto pagato nel 2022 copre anche gennaio e febbraio 2023: quella parte non è un costo di competenza del 2022.</li>
+</ul>
+
+<h3>Natura dei conti</h3>
+<div class="tbl"><table>
+<thead><tr><th>Natura</th><th>Significato nello schema del docente</th><th>Esempi</th></tr></thead>
+<tbody>
+<tr><td>Finanziaria (F)</td><td>Denaro, crediti, debiti e obbligazioni finanziarie</td><td>C/c, mutuo, crediti clienti, debiti fornitori, debiti tributari, fondo TFR</td></tr>
+<tr><td>Economica (E)</td><td>Costi, ricavi e valori economici patrimoniali</td><td>Stipendi, interessi, macchinari, capitale sociale, utile, fondi ammortamento</td></tr>
+</tbody>
+</table></div>
+<div class="box warn">
+<div class="bt">Attenzione</div>
+<p>Non vale la regola «economica = CE»: macchinari, capitale sociale e fondi ammortamento sono classificati come economici, ma nella soluzione vanno nello SP.</p>
+</div>
+
+<h3>Dare e Avere</h3>
+<p>Dare e Avere sono sezioni contabili: non significano sempre, rispettivamente, aumento e diminuzione.</p>
+<div class="tbl"><table>
+<thead><tr><th>Tipo di conto</th><th>Dare</th><th>Avere</th></tr></thead>
+<tbody>
+<tr><td>Attività dello SP</td><td>Aumento</td><td>Diminuzione</td></tr>
+<tr><td>Debiti/passività dello SP</td><td>Diminuzione</td><td>Aumento</td></tr>
+<tr><td>Patrimonio netto</td><td>Diminuzione</td><td>Aumento</td></tr>
+<tr><td>Costi del CE</td><td>Registrazione/aumento</td><td>Rettifica/riduzione</td></tr>
+<tr><td>Ricavi del CE</td><td>Rettifica/riduzione</td><td>Registrazione/aumento</td></tr>
+</tbody>
+</table></div>
+<p>Nelle operazioni del caso: entrata sul c/c → Dare; uscita dal c/c → Avere; costo → Dare; ricavo → Avere. Ogni scrittura deve rispettare totale Dare = totale Avere.</p>
+
+<h3>Procedimento dell'esercizio</h3>
+<ol>
+<li>Individuare i conti coinvolti.</li>
+<li>Scrivere natura, destinazione, Dare/Avere e valore.</li>
+<li>Controllare l'uguaglianza tra Dare e Avere.</li>
+<li>Riportare i movimenti nei mastrini, includendo i saldi iniziali dello SP.</li>
+<li>Costruire il CE e calcolare imposte e risultato netto.</li>
+<li>Costruire lo SP con i saldi finali e il risultato del CE.</li>
+<li>Verificare che attività = patrimonio netto + passività.</li>
+</ol>
+
+<h2>2. HOME DESIGN: scritture contabili</h2>
+
+<h3>Stato patrimoniale iniziale (31/12/2021)</h3>
+<p>Si parte dallo SP del 31 dicembre 2021: i suoi saldi vanno riportati nei nuovi mastrini, mentre il CE del nuovo esercizio riparte da zero. Lo schema è quello della soluzione, con impianti al costo storico e fondo ammortamento sul lato destro.</p>
+<div class="tbl"><table>
+<thead><tr><th>Attività</th><th>Importo</th><th>Patrimonio netto e passività</th><th>Importo</th></tr></thead>
+<tbody>
+<tr><td><strong>Attività non correnti</strong></td><td></td><td><strong>Patrimonio netto</strong></td><td></td></tr>
+<tr><td>Impianti</td><td>€900.000</td><td>Capitale sociale</td><td>€300.000</td></tr>
+<tr><td></td><td></td><td>Utile 2021</td><td>€350.000</td></tr>
+<tr><td><strong>Totale ANC</strong></td><td><strong>€900.000</strong></td><td><strong>Totale PN</strong></td><td><strong>€650.000</strong></td></tr>
+<tr><td><strong>Attività correnti</strong></td><td></td><td><strong>Passività non correnti</strong></td><td></td></tr>
+<tr><td>Conto corrente</td><td>€550.000</td><td>Mutuo</td><td>€1.000.000</td></tr>
+<tr><td>Crediti verso clienti</td><td>€500.000</td><td>Fondo ammortamento impianti</td><td>€100.000</td></tr>
+<tr><td>Rimanenze</td><td>€500.000</td><td>Fondo TFR</td><td>€50.000</td></tr>
+<tr><td><strong>Totale AC</strong></td><td><strong>€1.550.000</strong></td><td><strong>Totale PNC</strong></td><td><strong>€1.150.000</strong></td></tr>
+<tr><td></td><td></td><td><strong>Passività correnti</strong></td><td></td></tr>
+<tr><td></td><td></td><td>Debiti verso fornitori</td><td>€300.000</td></tr>
+<tr><td></td><td></td><td>Debiti tributari</td><td>€350.000</td></tr>
+<tr><td></td><td></td><td><strong>Totale PC</strong></td><td><strong>€650.000</strong></td></tr>
+<tr><td><strong>Totale attività</strong></td><td><strong>€2.450.000</strong></td><td><strong>Totale PN e passività</strong></td><td><strong>€2.450.000</strong></td></tr>
+</tbody>
+</table></div>
+
+<h3>Punto 1 — Acquisto del macchinario</h3>
+<p>Si acquista e paga tramite banca un macchinario da €100.000, vita utile 5 anni, valore residuo €20.000. Si registrano acquisto e quota annuale di ammortamento.</p>
+$$\text{Quota annua}=\frac{100.000-20.000}{5}=16.000\ \text{€}$$
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Destinazione</th><th>D/A</th><th>Valore</th></tr></thead>
+<tbody>
+<tr><td>Macchinari</td><td>E</td><td>SP, ANC</td><td>D</td><td>€100.000</td></tr>
+<tr><td>Conto corrente</td><td>F</td><td>SP, AC</td><td>A</td><td>€100.000</td></tr>
+<tr><td>Ammortamento macchinari</td><td>E</td><td>CE, GC</td><td>D</td><td>€16.000</td></tr>
+<tr><td>Fondo ammortamento macchinari</td><td>E</td><td>SP, PNC</td><td>A</td><td>€16.000</td></tr>
+</tbody>
+</table></div>
+<p>Il pagamento è di €100.000; il costo attribuito al CE dell'anno è €16.000. L'ammortamento non comporta un ulteriore pagamento.</p>
+
+<h3>Punto 2 — Ammortamento impianti</h3>
+<p>Impianti acquistati nel 2021: costo €900.000, vita utile 8 anni, residuo €100.000.</p>
+$$\text{Quota annua}=\frac{900.000-100.000}{8}=100.000\ \text{€}$$
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Destinazione</th><th>D/A</th><th>Valore</th></tr></thead>
+<tbody>
+<tr><td>Ammortamento impianti</td><td>E</td><td>CE, GC</td><td>D</td><td>€100.000</td></tr>
+<tr><td>Fondo ammortamento impianti</td><td>E</td><td>SP, PNC</td><td>A</td><td>€100.000</td></tr>
+</tbody>
+</table></div>
+<p>Il fondo finale sarà 100.000 iniziali + 100.000 del 2022 = €200.000. Il conto «Impianti» resta a €900.000 (valori lordi, come usa il prof).</p>
+
+<h3>Punto 3 — Stipendi e contributi</h3>
+<p>Pagamento di €600.000 tramite banca: costo del personale e uscita bancaria.</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Destinazione</th><th>D/A</th><th>Valore</th></tr></thead>
+<tbody>
+<tr><td>Stipendi e contributi</td><td>E</td><td>CE, GC</td><td>D</td><td>€600.000</td></tr>
+<tr><td>Conto corrente</td><td>F</td><td>SP, AC</td><td>A</td><td>€600.000</td></tr>
+</tbody>
+</table></div>
+
+<h3>Punto 4 — Accantonamento TFR</h3>
+<p>Accantonamento di €60.000: il costo TFR è economico, il fondo TFR è finanziario.</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Destinazione</th><th>D/A</th><th>Valore</th></tr></thead>
+<tbody>
+<tr><td>Accantonamento TFR</td><td>E</td><td>CE, GC</td><td>D</td><td>€60.000</td></tr>
+<tr><td>Fondo TFR</td><td>F</td><td>SP, PNC</td><td>A</td><td>€60.000</td></tr>
+</tbody>
+</table></div>
+<p>Non si movimenta il c/c: è un accantonamento, non un pagamento. Fondo finale: 50.000 + 60.000 = €110.000.</p>
+
+<h3>Punto 5 — Materie prime e servizi</h3>
+<p>Acquisto pagato tramite banca per €800.000.</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Destinazione</th><th>D/A</th><th>Valore</th></tr></thead>
+<tbody>
+<tr><td>Materie prime e servizi</td><td>E</td><td>CE, GC</td><td>D</td><td>€800.000</td></tr>
+<tr><td>Conto corrente</td><td>F</td><td>SP, AC</td><td>A</td><td>€800.000</td></tr>
+</tbody>
+</table></div>
+
+<h3>Punto 6 — Saldo debiti e incasso crediti</h3>
+<p>Gli importi non sono indicati nel testo: si recuperano dallo SP iniziale. Sono due operazioni separate.</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Destinazione</th><th>D/A</th><th>Valore</th></tr></thead>
+<tbody>
+<tr><td>Debiti verso fornitori</td><td>F</td><td>SP, PC</td><td>D</td><td>€300.000</td></tr>
+<tr><td>Conto corrente</td><td>F</td><td>SP, AC</td><td>A</td><td>€300.000</td></tr>
+<tr><td>Conto corrente</td><td>F</td><td>SP, AC</td><td>D</td><td>€500.000</td></tr>
+<tr><td>Crediti verso clienti</td><td>F</td><td>SP, AC</td><td>A</td><td>€500.000</td></tr>
+</tbody>
+</table></div>
+<p>Non nascono nuovi costi o ricavi: si estinguono debiti e crediti già presenti a inizio anno.</p>
+
+<h3>Punto 7 — Interessi passivi</h3>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Destinazione</th><th>D/A</th><th>Valore</th></tr></thead>
+<tbody>
+<tr><td>Interessi passivi</td><td>E</td><td>CE, GF</td><td>D</td><td>€150.000</td></tr>
+<tr><td>Conto corrente</td><td>F</td><td>SP, AC</td><td>A</td><td>€150.000</td></tr>
+</tbody>
+</table></div>
+<p>Sono il costo del finanziamento, non un rimborso del capitale: il mutuo resta a €1.000.000.</p>
+
+<h3>Punto 8 — Vendita di prodotti finiti</h3>
+<p>Vendita per €1.000.000 con incasso immediato.</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Destinazione</th><th>D/A</th><th>Valore</th></tr></thead>
+<tbody>
+<tr><td>Conto corrente</td><td>F</td><td>SP, AC</td><td>D</td><td>€1.000.000</td></tr>
+<tr><td>Prodotti finiti / ricavi di vendita</td><td>E</td><td>CE, GC</td><td>A</td><td>€1.000.000</td></tr>
+</tbody>
+</table></div>
+<p>Non si apre un credito verso clienti: il denaro è incassato subito.</p>
+
+<h3>Punto 9 — Affitto anticipato</h3>
+<p>Il 1° marzo 2022 l'impresa paga €24.000 per un anno di affitto (fino al 28/02/2023).</p>
+<div class="tbl"><table>
+<thead><tr><th>Quota</th><th>Periodo</th><th>Mesi</th><th>Calcolo</th></tr></thead>
+<tbody>
+<tr><td>Competenza 2022</td><td>Marzo–dicembre 2022</td><td>10</td><td>$24.000\times 10/12=20.000$ €</td></tr>
+<tr><td>Competenza futura</td><td>Gennaio–febbraio 2023</td><td>2</td><td>$24.000\times 2/12=4.000$ €</td></tr>
+</tbody>
+</table></div>
+<p>Il prof registra la quota futura come «Altre attività finanziarie», di natura finanziaria, nell'attivo corrente.</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Destinazione</th><th>D/A</th><th>Valore</th></tr></thead>
+<tbody>
+<tr><td>Affitto (10 mesi)</td><td>E</td><td>CE, GC</td><td>D</td><td>€20.000</td></tr>
+<tr><td>Altre attività finanziarie (2 mesi)</td><td>F</td><td>SP, AC</td><td>D</td><td>€4.000</td></tr>
+<tr><td>Conto corrente</td><td>F</td><td>SP, AC</td><td>A</td><td>€24.000</td></tr>
+</tbody>
+</table></div>
+<p>Controllo: $20.000+4.000=24.000$. Il denaro uscito è €24.000, ma il costo di competenza del 2022 è solo €20.000.</p>
+
+<h3>Punto 10 — Utile trasferito a capitale</h3>
+<p>L'utile 2021 resta in azienda e va ad aumento del capitale sociale.</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Destinazione</th><th>D/A</th><th>Valore</th></tr></thead>
+<tbody>
+<tr><td>Utile d'esercizio 2021</td><td>E</td><td>SP, PN</td><td>D</td><td>€350.000</td></tr>
+<tr><td>Capitale sociale</td><td>E</td><td>SP, PN</td><td>A</td><td>€350.000</td></tr>
+</tbody>
+</table></div>
+<p>È uno spostamento interno al patrimonio netto: il vecchio utile si azzera e il capitale sociale passa da 300.000 a €650.000. Nessuna entrata sul c/c.</p>
+
+<h3>Punto 11 — Rimanenze invariate</h3>
+<p>Nessuna variazione, quindi <strong>nessuna scrittura</strong>: rimanenze nello SP €500.000, variazione nel CE €0.</p>
+<div class="box warn">
+<div class="bt">Attenzione</div>
+<p>Non riportare €500.000 come nuovo ricavo nel CE 2022: è il saldo patrimoniale delle rimanenze, non la loro variazione annuale. Se non ci sono variazioni, scrivilo esplicitamente.</p>
+</div>
+
+<h3>Punto 12 — Pagamento imposte 2021</h3>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Destinazione</th><th>D/A</th><th>Valore</th></tr></thead>
+<tbody>
+<tr><td>Debiti tributari</td><td>F</td><td>SP, PC</td><td>D</td><td>€350.000</td></tr>
+<tr><td>Conto corrente</td><td>F</td><td>SP, AC</td><td>A</td><td>€350.000</td></tr>
+</tbody>
+</table></div>
+<p>Si riduce il debito e si registra l'uscita bancaria, senza costo fiscale nel CE 2022.</p>
+
+<h3>Punto 13 — Imposte 2022</h3>
+<p>Imposte pari al 50% dell'eventuale utile lordo, pagate nell'esercizio successivo. Prima si individua la scrittura, poi si completa il valore dopo il CE.</p>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Natura</th><th>Destinazione</th><th>D/A</th><th>Valore</th></tr></thead>
+<tbody>
+<tr><td>Imposte</td><td>E</td><td>CE, GFis</td><td>D</td><td>€0</td></tr>
+<tr><td>Debiti tributari</td><td>F</td><td>SP, PC</td><td>A</td><td>€0</td></tr>
+</tbody>
+</table></div>
+<p>Il risultato lordo è negativo, quindi le imposte sono zero. È la regola del caso: non vale per qualsiasi impresa in perdita.</p>
+
+<h2>3. Mastrini e bilanci finali</h2>
+
+<h3>Mastrino del conto corrente</h3>
+<div class="tbl"><table>
+<thead><tr><th>Movimento</th><th>Dare</th><th>Avere</th></tr></thead>
+<tbody>
+<tr><td>Saldo iniziale</td><td>€550.000</td><td>—</td></tr>
+<tr><td>Punto 1: acquisto macchinario</td><td>—</td><td>€100.000</td></tr>
+<tr><td>Punto 3: stipendi e contributi</td><td>—</td><td>€600.000</td></tr>
+<tr><td>Punto 5: materie prime e servizi</td><td>—</td><td>€800.000</td></tr>
+<tr><td>Punto 6: pagamento fornitori</td><td>—</td><td>€300.000</td></tr>
+<tr><td>Punto 6: incasso clienti</td><td>€500.000</td><td>—</td></tr>
+<tr><td>Punto 7: interessi passivi</td><td>—</td><td>€150.000</td></tr>
+<tr><td>Punto 8: incasso vendite</td><td>€1.000.000</td><td>—</td></tr>
+<tr><td>Punto 9: affitto anticipato</td><td>—</td><td>€24.000</td></tr>
+<tr><td>Punto 12: pagamento imposte 2021</td><td>—</td><td>€350.000</td></tr>
+<tr><td><strong>Totale</strong></td><td><strong>€2.050.000</strong></td><td><strong>€2.324.000</strong></td></tr>
+</tbody>
+</table></div>
+$$S=2.050.000-2.324.000=-274.000\ \text{€}$$
+<p>Saldo di €274.000 in <strong>Avere</strong>: nello SP finale è un c/c negativo, quindi tra le passività correnti.</p>
+
+<h3>Altri mastrini patrimoniali</h3>
+<div class="tbl"><table>
+<thead><tr><th>Conto</th><th>Dare</th><th>Avere</th><th>Saldo finale</th></tr></thead>
+<tbody>
+<tr><td>Impianti</td><td>900.000 iniziali</td><td>—</td><td>€900.000 D</td></tr>
+<tr><td>Macchinari</td><td>100.000 (p. 1)</td><td>—</td><td>€100.000 D</td></tr>
+<tr><td>Crediti verso clienti</td><td>500.000 iniziali</td><td>500.000 (p. 6)</td><td>€0</td></tr>
+<tr><td>Rimanenze</td><td>500.000 iniziali</td><td>—</td><td>€500.000 D</td></tr>
+<tr><td>Altre attività finanziarie</td><td>4.000 (p. 9)</td><td>—</td><td>€4.000 D</td></tr>
+<tr><td>Capitale sociale</td><td>—</td><td>300.000 iniziali + 350.000 (p. 10)</td><td>€650.000 A</td></tr>
+<tr><td>Utile d'esercizio 2021</td><td>350.000 (p. 10)</td><td>350.000 iniziali</td><td>€0</td></tr>
+<tr><td>Mutuo</td><td>—</td><td>1.000.000 iniziali</td><td>€1.000.000 A</td></tr>
+<tr><td>Fondo amm. impianti</td><td>—</td><td>100.000 iniziali + 100.000 (p. 2)</td><td>€200.000 A</td></tr>
+<tr><td>Fondo amm. macchinari</td><td>—</td><td>16.000 (p. 1)</td><td>€16.000 A</td></tr>
+<tr><td>Fondo TFR</td><td>—</td><td>50.000 iniziali + 60.000 (p. 4)</td><td>€110.000 A</td></tr>
+<tr><td>Debiti verso fornitori</td><td>300.000 (p. 6)</td><td>300.000 iniziali</td><td>€0</td></tr>
+<tr><td>Debiti tributari</td><td>350.000 (p. 12)</td><td>350.000 iniziali + 0 (p. 13)</td><td>€0</td></tr>
+</tbody>
+</table></div>
+
+<h3>Conto economico 2022</h3>
+<p>I conti economici del 2022 non riprendono costi e ricavi del 2021.</p>
+<div class="tbl"><table>
+<thead><tr><th>Gestione</th><th>Voce</th><th>Importo</th></tr></thead>
+<tbody>
+<tr><td>Caratteristica</td><td>Ricavi di vendita</td><td>+ €1.000.000</td></tr>
+<tr><td>Caratteristica</td><td>Stipendi e contributi</td><td>− €600.000</td></tr>
+<tr><td>Caratteristica</td><td>TFR</td><td>− €60.000</td></tr>
+<tr><td>Caratteristica</td><td>Materie prime e servizi</td><td>− €800.000</td></tr>
+<tr><td>Caratteristica</td><td>Ammortamento impianti</td><td>− €100.000</td></tr>
+<tr><td>Caratteristica</td><td>Ammortamento macchinari</td><td>− €16.000</td></tr>
+<tr><td>Caratteristica</td><td>Affitto</td><td>− €20.000</td></tr>
+<tr><td></td><td><strong>EBIT</strong></td><td><strong>− €596.000</strong></td></tr>
+<tr><td>Finanziaria</td><td>Interessi passivi</td><td>− €150.000</td></tr>
+<tr><td></td><td><strong>Risultato gestione ordinaria</strong></td><td><strong>− €746.000</strong></td></tr>
+<tr><td>Straordinaria</td><td>—</td><td>€0</td></tr>
+<tr><td></td><td><strong>Perdita lorda</strong></td><td><strong>− €746.000</strong></td></tr>
+<tr><td>Fiscale</td><td>Imposte</td><td>€0</td></tr>
+<tr><td></td><td><strong>Perdita d'esercizio</strong></td><td><strong>− €746.000</strong></td></tr>
+</tbody>
+</table></div>
+<p>L'impresa perde già €596.000 nella gestione caratteristica; gli interessi aggiungono €150.000.</p>
+
+<h3>Stato patrimoniale 2022</h3>
+<p>Il c/c negativo va nelle passività correnti, non come attività negativa.</p>
+<div class="tbl"><table>
+<thead><tr><th>Attività</th><th>Importo</th><th>Patrimonio netto e passività</th><th>Importo</th></tr></thead>
+<tbody>
+<tr><td><strong>Attività non correnti</strong></td><td></td><td><strong>Patrimonio netto</strong></td><td></td></tr>
+<tr><td>Impianti</td><td>€900.000</td><td>Capitale sociale</td><td>€650.000</td></tr>
+<tr><td>Macchinari</td><td>€100.000</td><td>Perdita d'esercizio</td><td>−€746.000</td></tr>
+<tr><td><strong>Totale ANC</strong></td><td><strong>€1.000.000</strong></td><td><strong>Totale PN</strong></td><td><strong>−€96.000</strong></td></tr>
+<tr><td><strong>Attività correnti</strong></td><td></td><td><strong>Passività non correnti</strong></td><td></td></tr>
+<tr><td>Conto corrente</td><td>€0</td><td>Mutuo</td><td>€1.000.000</td></tr>
+<tr><td>Crediti verso clienti</td><td>€0</td><td>Fondo amm. impianti</td><td>€200.000</td></tr>
+<tr><td>Rimanenze</td><td>€500.000</td><td>Fondo amm. macchinari</td><td>€16.000</td></tr>
+<tr><td>Altre attività finanziarie</td><td>€4.000</td><td>Fondo TFR</td><td>€110.000</td></tr>
+<tr><td><strong>Totale AC</strong></td><td><strong>€504.000</strong></td><td><strong>Totale PNC</strong></td><td><strong>€1.326.000</strong></td></tr>
+<tr><td></td><td></td><td><strong>Passività correnti</strong></td><td></td></tr>
+<tr><td></td><td></td><td>Debiti verso fornitori</td><td>€0</td></tr>
+<tr><td></td><td></td><td>Debiti tributari</td><td>€0</td></tr>
+<tr><td></td><td></td><td>Conto corrente negativo</td><td>€274.000</td></tr>
+<tr><td></td><td></td><td><strong>Totale PC</strong></td><td><strong>€274.000</strong></td></tr>
+<tr><td><strong>Totale attività</strong></td><td><strong>€1.504.000</strong></td><td><strong>Totale PN e passività</strong></td><td><strong>€1.504.000</strong></td></tr>
+</tbody>
+</table></div>
+$$PN=650.000-746.000=-96.000\ \text{€}$$
+$$-96.000+1.326.000+274.000=1.504.000=1.000.000+504.000$$
+<div class="box ex">
+<div class="bt">Nota — versione alternativa</div>
+<p>Il docente ha ammesso oralmente anche il c/c negativo nell'attivo (totale €1.230.000). Negli appunti si usa la versione da €1.504.000, coerente con il PDF.</p>
+</div>
+
+<h3>Confronto 2021–2022</h3>
+<div class="tbl"><table>
+<thead><tr><th>Indicatore</th><th>2021</th><th>2022</th></tr></thead>
+<tbody>
+<tr><td>Ricavi di vendita</td><td>€1.500.000</td><td>€1.000.000</td></tr>
+<tr><td>Variazione rimanenze nel CE</td><td>+€500.000</td><td>€0</td></tr>
+<tr><td>EBIT</td><td>€350.000</td><td>−€596.000</td></tr>
+<tr><td>Risultato gestione ordinaria</td><td>€200.000</td><td>−€746.000</td></tr>
+<tr><td>Proventi straordinari</td><td>€500.000</td><td>€0</td></tr>
+<tr><td>Risultato lordo</td><td>€700.000</td><td>−€746.000</td></tr>
+<tr><td>Imposte</td><td>€350.000</td><td>€0</td></tr>
+<tr><td>Risultato netto</td><td>€350.000</td><td>−€746.000</td></tr>
+<tr><td>Saldo conto corrente</td><td>€550.000</td><td>−€274.000</td></tr>
+<tr><td>Patrimonio netto</td><td>€650.000</td><td>−€96.000</td></tr>
+<tr><td>Totale attività</td><td>€2.450.000</td><td>€1.504.000</td></tr>
+</tbody>
+</table></div>
+<p>Nel 2022 calano le vendite, aumenta il costo del personale, non c'è l'incremento di rimanenze e manca il provento straordinario di €500.000: il risultato passa da utile a perdita. Il trasferimento dell'utile a capitale non cambia il PN complessivo, solo la sua composizione; la perdita (€746.000) supera il PN iniziale (€650.000) e lo porta a −€96.000.</p>
+
+<h2>4. Analisi di bilancio</h2>
+
+<h3>A cosa serve</h3>
+<p>L'analisi trasforma i dati contabili in informazioni sulla gestione. Gli indici sono rapporti tra grandezze e permettono di interpretare i valori assoluti: dire «un'azienda ha più utile di un'altra» non basta, potrebbe essere solo più grande.</p>
+
+<h3>Tipi di confronto</h3>
+<div class="tbl"><table>
+<thead><tr><th>Analisi</th><th>Confronto</th><th>Domanda</th></tr></thead>
+<tbody>
+<tr><td>Interperiodale</td><td>Stessa impresa in anni diversi</td><td>Sta migliorando o peggiorando?</td></tr>
+<tr><td>Interaziendale</td><td>Imprese diverse in periodi confrontabili</td><td>Come si posiziona rispetto ai concorrenti?</td></tr>
+<tr><td>Combinata</td><td>Più imprese in più anni</td><td>Quale impresa migliora maggiormente?</td></tr>
+</tbody>
+</table></div>
+<p>Il confronto deve considerare settore, condizioni operative ed eventi eccezionali (il docente cita il Covid).</p>
+
+<h3>Riclassificazione</h3>
+<p>Per confrontare le aziende servono dati omogenei: nel corso SP secondo liquidità/esigibilità e CE scalare per natura. Non basta copiare indici da siti diversi: bisogna controllare formula, dati, periodo e fonte. La nota integrativa aiuta a ricostruire le voci necessarie.</p>
+
+<h3>Famiglie di indici</h3>
+<div class="tbl"><table>
+<thead><tr><th>Equilibrio</th><th>Che cosa osserva</th><th>Indici</th></tr></thead>
+<tbody>
+<tr><td>Patrimoniale</td><td>Gestione del capitale disponibile</td><td>Liquidità</td></tr>
+<tr><td>Finanziario</td><td>Capacità di far fronte alle obbligazioni finanziarie</td><td>Struttura finanziaria</td></tr>
+<tr><td>Economico</td><td>Generazione di reddito e remunerazione dei fattori</td><td>Redditività</td></tr>
+</tbody>
+</table></div>
+<p>Un solo indice non basta: vanno combinati e interpretati rispetto al settore e al tempo.</p>
+
+<h3>Rapporto corrente</h3>
+$$RC=\frac{\text{Attività correnti}}{\text{Passività correnti}}$$
+<ul>
+<li>$RC\gt 1$: attività correnti superiori alle passività correnti;</li>
+<li>$RC=1$: copertura esatta;</li>
+<li>$RC\lt 1$: attività correnti inferiori alle passività correnti.</li>
+</ul>
+<p>Esempio del docente: 120 € di attività correnti e 100 € di passività correnti danno $RC=1{,}2$. Limite: le attività correnti non sono tutte denaro (crediti e rimanenze), quindi $RC\gt 1$ non garantisce l'assenza di problemi di pagamento.</p>
+
+<h3>Liquidità immediata (acid test)</h3>
+$$LI=\frac{\text{Attività correnti}-\text{Rimanenze}}{\text{Passività correnti}}$$
+<p>Esclude le rimanenze: lettura più prudente. Esempio: le scorte di una collezione di moda della stagione precedente possono richiedere sconti o più tempo per essere vendute; avere magazzino non è avere denaro.</p>
+
+<h3>Copertura delle immobilizzazioni</h3>
+$$CI=\frac{\text{Attività non correnti}}{\text{Passività non correnti}+\text{Patrimonio netto}}$$
+<p>Con questo verso del rapporto, la copertura con fonti stabili corrisponde a $CI\le 1$.</p>
+<ul>
+<li>$CI\lt 1$: le fonti stabili superano le immobilizzazioni;</li>
+<li>$CI=1$: copertura esatta;</li>
+<li>$CI\gt 1$: le immobilizzazioni superano le fonti stabili.</li>
+</ul>
+<div class="box thm">
+<div class="bt">Legame tra RC e CI</div>
+$$AC+ANC=PC+PNC+PN \;\Rightarrow\; AC-PC=PNC+PN-ANC$$
+<p>Con denominatori positivi, se $RC\gt 1$ allora $CI\lt 1$.</p>
+</div>
+
+<h2>5. Caso Visa e Mastercard</h2>
+
+<h3>Il modello a piattaforma</h3>
+<p>Visa e Mastercard sono piattaforme che collegano soggetti diversi nel sistema dei pagamenti. Problema iniziale: «uovo e gallina». I clienti hanno poco incentivo a usare una carta senza commercianti che la accettino, e viceversa.</p>
+<div class="tbl"><table>
+<thead><tr><th></th><th>Visa</th><th>Mastercard</th></tr></thead>
+<tbody>
+<tr><td>Origine</td><td>1958, Fresno (California)</td><td>1966</td></tr>
+<tr><td>Nome originario</td><td>BankAmericard</td><td>Master Charge: The Interbank Card</td></tr>
+<tr><td>Cambio di nome</td><td>Visa, 1976</td><td>MasterCard, 1979</td></tr>
+</tbody>
+</table></div>
+<p>Le slide riportano il primo profitto di BankAmericard nel 1961.</p>
+
+<h3>Dati del caso</h3>
+<p>Valori in milioni di USD (32.653 = 32.653 milioni di dollari).</p>
+<div class="tbl"><table>
+<thead><tr><th>Voce</th><th>Visa 2022</th><th>Visa 2023</th><th>MC 2022</th><th>MC 2023</th></tr></thead>
+<tbody>
+<tr><td>Ricavi</td><td>29.310</td><td>32.653</td><td>22.221</td><td>25.127</td></tr>
+<tr><td>EBIT</td><td>19.750</td><td>22.017</td><td>12.583</td><td>14.534</td></tr>
+<tr><td>Risultato netto</td><td>14.630</td><td>16.989</td><td>9.930</td><td>11.195</td></tr>
+<tr><td>Totale attività</td><td>85.501</td><td>90.499</td><td>38.724</td><td>42.448</td></tr>
+<tr><td>Attività correnti</td><td>30.205</td><td>33.532</td><td>16.606</td><td>18.961</td></tr>
+<tr><td>Attività non correnti</td><td>55.296</td><td>56.967</td><td>22.118</td><td>23.487</td></tr>
+<tr><td>Patrimonio netto</td><td>35.581</td><td>38.733</td><td>6.377</td><td>6.997</td></tr>
+<tr><td>Passività correnti</td><td>20.853</td><td>23.098</td><td>14.171</td><td>16.264</td></tr>
+<tr><td>Passività non correnti</td><td>29.067</td><td>28.668</td><td>18.176</td><td>19.187</td></tr>
+</tbody>
+</table></div>
+<p>«Total liabilities» indica le passività verso terzi, senza il PN: totale attività = PN + passività.</p>
+
+<h3>Visa: esercizio della lezione</h3>
+<div class="tbl"><table>
+<thead><tr><th>Indice</th><th>2022</th><th>2023</th></tr></thead>
+<tbody>
+<tr><td>RC</td><td>$30.205/20.853=1{,}45$</td><td>$33.532/23.098=1{,}45$</td></tr>
+<tr><td>CI</td><td>$55.296/(29.067+35.581)=0{,}85$</td><td>$56.967/(28.668+38.733)=0{,}85$</td></tr>
+</tbody>
+</table></div>
+<p>Visa copre gli obblighi correnti con le attività correnti e le immobilizzazioni con fonti stabili; valori sostanzialmente invariati nei due anni. Due indici non bastano però a concludere che sia migliore dei concorrenti o efficiente sotto ogni aspetto.</p>
+
+<h3>Mastercard (integrazione dalle slide)</h3>
+<div class="tbl"><table>
+<thead><tr><th>Indice 2023</th><th>Visa</th><th>Mastercard</th></tr></thead>
+<tbody>
+<tr><td>RC</td><td>1,45</td><td>$18.961/16.264=1{,}17$</td></tr>
+<tr><td>CI</td><td>0,85</td><td>$23.487/(19.187+6.997)=0{,}90$</td></tr>
+</tbody>
+</table></div>
+<p>Entrambe hanno $RC\gt 1$ e $CI\lt 1$. Visa ha maggiore copertura nel breve; Mastercard è più vicina all'equilibrio esatto (struttura apparentemente più bilanciata, non migliore in assoluto). L'acid test non è calcolabile: manca il dettaglio delle rimanenze.</p>
+
+<h3>Struttura finanziaria (anticipazione)</h3>
+<div class="tbl"><table>
+<thead><tr><th>Indice</th><th>Formula</th><th>Visa 2023</th><th>MC 2023</th></tr></thead>
+<tbody>
+<tr><td>Autonomia finanziaria (AF)</td><td>$\frac{PN}{\text{Totale attività}}\times 100$</td><td>42,8%</td><td>16,5%</td></tr>
+<tr><td>Elasticità ai finanziamenti (EF)</td><td>$\frac{PC}{\text{Totale attività}}\times 100$</td><td>25,5%</td><td>38,3%</td></tr>
+</tbody>
+</table></div>
+<p>AF = quota del capitale investito finanziata dal PN; EF = quota finanziata da passività correnti. Visa ha più autonomia, Mastercard più elasticità: l'elasticità descrive la composizione delle fonti, non una garanzia di maggiore solidità.</p>
+
+<h2>6. Errori da evitare</h2>
+<div class="box warn">
+<div class="bt">Accorgimenti per l'esame</div>
+<ul>
+<li>Recupera dallo SP iniziale gli importi non indicati nei punti.</li>
+<li>Nelle scritture registra le variazioni; nei mastrini determina i saldi.</li>
+<li>Non dimenticare i saldi iniziali dei conti patrimoniali.</li>
+<li>Non trasformare il pagamento di un vecchio debito in un nuovo costo.</li>
+<li>Completa anche i punti che danno risultato zero.</li>
+<li>Mantieni visibili i passaggi senza cancellare le righe già riportate.</li>
+</ul>
+</div>
+
+<h2>Da ricordare per l'esame</h2>
+<ul>
+<li>Competenza ≠ pagamento: imposte 2021 pagate nel 2022 estinguono un debito, affitto anticipato = 10/12 costo + 2/12 attività.</li>
+<li>Ammortamento = (costo − residuo) / vita utile; nel CE entra solo la quota dell'anno.</li>
+<li>Rimanenze invariate: nessuna scrittura, variazione zero.</li>
+<li>Risultato 2022: EBIT −€596.000, perdita −€746.000, PN −€96.000, totale attivo €1.504.000, c/c −€274.000 (passività corrente).</li>
+<li>$RC=\frac{AC}{PC}$, $LI=\frac{AC-\text{rimanenze}}{PC}$, $CI=\frac{ANC}{PNC+PN}$; se $RC\gt 1$ allora $CI\lt 1$.</li>
+<li>Confronti: interperiodale, interaziendale, combinata; servono dati riclassificati e omogenei.</li>
+<li>Visa 2023: RC 1,45, CI 0,85, AF 42,8%; Mastercard: RC 1,17, CI 0,90, AF 16,5%.</li>
+</ul>
